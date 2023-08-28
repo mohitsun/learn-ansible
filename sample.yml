@@ -5,4 +5,4 @@
     - name: DEmo task
       ansible.builtin.yum:
        name : nginx
-       state : installed
+       state : latest
