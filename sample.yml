@@ -1,5 +1,5 @@
 - name: Sample playbook
-  hosts: all
+  hosts: WEB
   tasks:
     - name: DEmo task
       ansible.builtin.yum:
