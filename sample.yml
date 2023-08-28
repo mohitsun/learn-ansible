@@ -1,0 +1,7 @@
+- name: Sample playbook
+  hosts: all
+  tasks:
+    - name: DEmo task
+      ansible.builtin.yum:
+       name : nginx
+       state : installed
