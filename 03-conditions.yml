@@ -3,7 +3,7 @@
   connection: local
   vars:
     fruit: true
-    vegetable: true
+    vegetable: false
   tasks:
     - name: Print fruit name
       ansible.builtin.debug:
