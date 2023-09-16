@@ -1,0 +1,12 @@
+- name: Variable types
+  hosts: all
+  vars:
+    fruit_name: "Orange" #string
+    quantity: 100 #number
+    for_sale: true #boolean
+    #play level variable
+  tasks:
+    - name: Print Variable types
+      ansible.builtin.debug:
+        msg: Fruit Name = {{ fruit_name }}, Quantity = {{ quantity }}, for sale = {{ for_sale }}
+      when: for_sale is true

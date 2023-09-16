@@ -1,8 +1,13 @@
 - name: Variable
   hosts: WEB
   vars:
-   URL: google.com
+   URL: play.google.com #play level variable
   tasks:
    - name: Print Variable
      ansible.builtin.debug:
        msg: URL={{ URL }}
+
+   - name: Print task variable
+     ansible.builtin.debug:
+       msg: URL={{ URL }}
+     vars: tasks.google.com
